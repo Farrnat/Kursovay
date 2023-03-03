@@ -1,0 +1,30 @@
+﻿<Window x:Class="AutoParts.UserPageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoParts"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="400" Width="800">
+    <Grid Background="AliceBlue">
+        <Border MinWidth="400" Margin="15" Background="PeachPuff" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="80" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Кабинет пользователя" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Grid>
+                    <Button Content="Двигатель" HorizontalAlignment="Left" Click="Button_Engine_Window_Click"/>
+                    <Button Content="Салон" HorizontalAlignment="Center" Width="100"/>
+                    <Button Content="Ходовая" HorizontalAlignment="Left" Margin="390,0,0,0" Width="100"/>
+                </Grid>
+                <Grid Margin="0 40 0 0">
+                    <Button Content="Пластик" HorizontalAlignment="Left" Width="100"/>
+                    <Button Content="Расходники" HorizontalAlignment="Center" Width="100"/>
+                    <Button Content="Колеса" HorizontalAlignment="Left" Margin="390,0,0,0" Width="100"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
